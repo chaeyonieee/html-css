@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>웹 폼</title>
+<style>
+body{
+background-color:#fff;
+}
+form fieldset{
+margin-bottom:25px;
+}
+form legend{
+font-size:15px;
+font-weight:600;}
+
+form label.reg{
+font-size:14px;
+width:110px;
+color:#390;
+font-weight:bold;
+float:Left;
+text-align:right;
+margin-right:10px;
+
+}
+from ul li{
+list-style:none;
+margin: 15px 0;
+font-size:14px;
+
+}
+#member, #stuffs{
+width:50px;
+}
+</style>
+
+</head>
+<body>
+<h1>여름 방학 특강 신청</h1>
+<form method="get" action="Readonly" encType ="utf-8">
+<fieldset id = "subject">
+<legend> 수강과목</legend>
+<ul>
+<li>
+<label class = "reg" for="subj">영어회화(초급)</label>
+<input type = "text" id ="subj" value = "오전 9:00~11:00" name = "time" readonly>
+</li>
+
+<li>
+<label class = "reg" for="subj">이름</label>
+<input type = "text" id ="subj" name = "user_id">
+</li>
+
+</ul>
+
+</fieldset>
+<fieldset>
+<button type = "submit" value = "submit">신청하기</button>
+<button type = "reset" value = "reset">다시쓰기</button>
+</fieldset>
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>웹 표준에 맞는 HTML5 프로그래밍 </title>
+<style>
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+
+	input[type = "submit"]{
+		text-align:top;
+		margin:20px
+		}	
+	
+	ul{
+		list-style:none;
+	}
+	
+	li{
+	 background-color:aliceblue;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+	margin:10px
+	float=center;
+	font-size: 15px;
+    position: relative;
+    text-align: center;
+ 	font-family: 'Hi Melody', cursive;
+    font-size : 20px;
+    
+
+	}
+	.subm:hover{
+	background-color : #e6efc2;
+	border:1px solid #c6d880;
+	color: #529215;
+		
+	}
+	.B{
+	font-family: 'Hi Melody', cursive;
+	font-size : 25px;
+	}
+	.sumn{
+	font-family: 'Hi Melody', cursive;
+	font-size : 25px;
+	}
+	
+	
+	
+	
+</style>
+</head>
+<body>
+	<form method = "post" action ="Member" encType = "utf-8">
+		<fieldset class = "B" >
+			<회원가입 >
+		</fieldset>
+		<fieldset>
+			<fieldset>
+			<ul>
+			<li><label>아이디 : <input type ="text" size ="10" name= "user_id"></label></li><br>
+			<li><label>비밀번호 : <input type ="password" size ="10" name= "user_pw"></label></li><br>
+			<li><label>비밀번호 확인 : <input type ="password" size ="10" name= "check_pw"></label></li><br>
+			<li><label>이름 : <input type ="text" size ="10" name= "user_name"></label></li><br>
+			<li><label>생년월일 : <input type ="date" size ="10" name= "user_birth"></label></li><br>
+			<li><label>휴대폰 번호 : <input type ="tel" size ="10" name= "user_tele"></label></li><br>
+			<li><label>이메일 : <input type ="email" size ="10" name= "user_email"></label></li><br>
+			<li><label>주소 : <input type ="text" size ="10" name= "user_addr"></label></li><br>
+			</ul>
+		</fieldset>
+		<input type = "submit" value = "이전" class ="sumn"> 		
+		
+		<input type = "submit" value = "가입하기" class = "sumn">
+		</fieldset>
+		<fieldset>
+		 
+		</fieldset>
+	
+	</form>
+</body>
+</html>
