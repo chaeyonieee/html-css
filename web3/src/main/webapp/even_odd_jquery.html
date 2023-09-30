@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>탐지 선택자</title>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script>
+$(function(){
+$("#menu li:even")
+.css({"background-color":"#ff0"});
+
+$("#menu li:odd").css({"background-color":"#0ff"})
+
+
+.css({"border-radius":"20px"});
+});
+
+</script>
+</head>
+<body>
+<h1>탐지 선택자</h1>
+<ul id ="menu">
+<li>내용1</li>
+<li>내용2</li>
+<li>내용3</li>
+<li>내용4</li>
+
+
+</ul>
+</body>
+</html>

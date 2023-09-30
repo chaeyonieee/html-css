@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>수학 객체</title>
+<script>
+
+var game = confirm("게임을 진행하시겠습니까?");
+document.write("<h1>컴퓨터와 가위 바위 보 맞추기</h1>");
+var game = prompt("가위, 바위, 보 중 선택하세요?","가위");
+
+var me = prompt("가위, 바위, 보 중 선택하세요?","");
+var you= prompt("가위, 바위, 보 중 선택하세요?","");
+
+var meNum;
+var youNum;
+
+switch(me){
+case "가위" : meNum = 1;
+break;
+case "바위" :meNum = 2;
+break;
+case "보" :meNum = 3;
+break;
+default: alert("잘못 작성하셨습니다.");
+location.reload();
+}
+switch(you){
+case "가위" : youNum = 1;
+break;
+case "바위" :youNum = 2;
+break;
+case "보" :youNum = 3;
+break;
+default: alert("잘못 작성하셨습니다.");
+location.reload();
+}
+
+if(meNum == youNum){
+	document.write("내가 낸것: ");
+	document.write("<img src=\"images/1.jpg\">");
+	document.write("상대방이 낸것: ");
+	document.write("<img src=\"images/1.jpg\">");
+	document.write("비겼습니다");
+}
+else if(meNum1 < youNum2){
+	document.write("내가 낸것: ");
+	document.write("<img src=\"images/rock.jpg\">");
+	document.write("상대방이 낸것: ");
+	document.write("<img src=\"images/rock.jpg\">");
+	document.write("졌습니다");
+	
+}else if(meNum > youNum){ 
+	document.write("내가 낸것: ");
+	document.write("<img src=\"images/paper.jpg\">");
+	document.write("상대방이 낸것: ");
+	document.write("<img src=\"images/paper.jpg\">");
+	document.write("맞췄습니다");
+
+}
+
+</script>
+</head>
+<body>
+</body>
+</html>
