@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>이벤트</title>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script>
+$(function(){
+	$(".btn1").on("mouseover",function(){
+		alert("hello");
+		
+	});
+	$(document).on("mouseover",".btn2",function(){
+		alert("welcome")
+	});
+	var btn2 = $("<p><button class =\"btn2\">버튼2</button></p>");
+	$("#wrap").append(btn2);
+	
+	$(".del1").on("click",function(){
+		$(".btn1").off("mouseover");
+	});
+	$(".del2").on("click",function(){
+		$(document).off("mouseover",".btn2");
+	});
+});
+
+
+
+
+</script>
+
+
+</head>
+<body>
+	<div id="wrap">
+	<p><button class ="btn1">버튼1</button>
+	</div>
+	<p><button class ="del1">버튼1 이벤트 해지</button>
+		<button class ="del2">버튼2 이벤트 해지</button>
+	</p>
+</body>
+</html>

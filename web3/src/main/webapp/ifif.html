@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>중첩 if문</title>
+<script>
+var id = "easy1004";
+var pw = "112233";
+
+var user_id = prompt("ID?","");
+if(id == user_id){
+	
+	var user_pw = prompt("PassWord ?","");
+	if(pw==user_pw){
+	document.write("Hello "+user_id);
+	}else{
+	alert("Password is incorrect");
+	location.reload();
+	}
+	
+}else{
+	alert("ID is incorrect")
+	location.reload();
+	
+}
+
+	
+	
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

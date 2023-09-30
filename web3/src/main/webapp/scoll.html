@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>이벤트</title>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script>
+$(window).on("scroll",function(){
+	var sc_top = $(this).scrollTop();
+	var sc_left = $(this).scrollLeft();
+	
+	$(".top").text(sc_top);
+	$(".left").text(sc_left);
+});
+
+</script>
+<style>
+body{height:10000px;
+width:5000px;}
+
+#wrap{
+position :fixed;
+left:10px;
+top:10px;
+}
+
+
+</style>
+
+
+</head>
+<body>
+<div id ="wrap">
+<p>scrollTop:<span class="top">0</span>px</p>
+<p>scrollLeft:<span class="left">0</span>px</p>
+
+
+
+</div>
+
+
+</body>
+</html>

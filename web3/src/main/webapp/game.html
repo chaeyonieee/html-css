@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script>
+var game = confirm("게임을 진행하시겠습니까?");
+document.write("<h1>컴퓨터와 가위 바위 보 맞추기</h1>");
+var game = prompt("가위, 바위, 보 중 선택하세요?","가위");
+
+var me;
+switch(game){
+case "가위" : me = 1;
+break;
+case "바위" :me = 2;
+break;
+case "보" :me = 3;
+break;
+default: alert("잘못 작성하셨습니다.")
+location.reload();
+}
+
+var you = Math.ceil(Math.random()*3);
+document.write("<img src =\"images/>"+com+".jpg\">");
+if(me == you){
+	document.write("<img src=\"images/smile.jpg\">","<br>");
+	document.write("맞췄습니다")
+
+	
+}else{
+	document.write("<img src=\"images/sad.png\">","<br>");
+	document.write("틀립니다.")
+}
+</script>
+</head>
+<body>
+
+</body>
+</html>
