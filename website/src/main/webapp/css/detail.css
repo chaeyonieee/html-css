@@ -1,0 +1,81 @@
+aside #left {
+  width: 215px;
+  float: left;
+  margin-top: 15px;
+  font-weight: bold;
+}
+aside #left #cat_title {
+  padding: 12px;
+  background-color: #96c11f;
+  color: #ffffff;
+  text-align: center;
+}
+aside #left li {
+  color: #666666;
+  padding: 7px 0 7px 30px;
+  border-left: solid 1px #cccccc;
+  border-right: solid 1px #cccccc;
+  border-bottom: solid 1px #cccccc;
+}
+aside #left #customer {
+  width: 213;
+  height: 100px;
+  margin-top: 20px;
+  border: solid 1px #cccccc;
+  background-color: #ffffff;
+}
+aside #left #customer img {
+  margin: 5px 0 0 5px;
+}
+section #right {
+  width: 750px;
+  float: right;
+  margin-top: 20px;
+}
+/* 상품 구매정보(상품 제목 판매가 제조사 가격) */
+section #right #summary h3 {
+  font-size: 16px;
+  padding-bottom: 8px;
+  border-bottom: solid 1px #444444;
+}
+section #right #summary h3 span {
+  color: #80a727;
+}
+section #right #summary1 {
+  float: left;
+  margin-top: 20px;
+}
+section #right #summary1 .buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+section #right #summary2 {
+  width: 390px;
+  float: right;
+  margin-top: 20px;
+}
+section#right #summary2 .item li {
+  margin: 10px 0 0 0;
+}
+section #right #summary .col1 {
+  width: 100px;
+  float: left;
+}
+section #right #summary2 .col2{
+	width:200px;
+	float:left;
+}
+section #right #summary2 .size{
+	margin:20px 0 0 20px;
+	padding-bottom:10px;
+	border-bottom:solid 15p #cccccc;
+}
+section #right #summary2 .size li{
+	margin: 5px 0;
+}
+section #right #summary2 .buttons{
+	margin: 15px 0 0 120px;
+}
+section #right #summary2 .buttons li{
+	
+}
